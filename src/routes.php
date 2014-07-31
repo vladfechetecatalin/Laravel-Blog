@@ -10,7 +10,7 @@ if (Config::get('laravel-blog::routes.relationship_uri_prefix'))
 {
 	// Relationship filtered listing, e.g. by category or tag, e.g. http://domain.com/blog/category/my-category
 	if (is_array(Config::get('laravel-blog::routes.relationship_uri_prefix'))) {
-		Route::get(Config::get('laravel-blog::routes.base_uri').'/{relationship}/{relationshipIdentifier}', 'Fbf\LaravelBlog\PostsController@indexByRelationship')->where('relationship', '(category)|(tag)|(author)');
+		Route::get(Config::get('laravel-blog::routes.base_uri').'/{relationship}/{relationshipIdentifier}', 'Fbf\LaravelBlog\PostsController@indexByRelationship')->where('relationship', '(category)|(tag)');
 	}
 }
 
