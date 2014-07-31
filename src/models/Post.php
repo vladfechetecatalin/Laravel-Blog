@@ -113,7 +113,7 @@ class Post extends \Eloquent {
 	 * @param $relationshipIdentifier
 	 * @throws Exception
 	 */
-	public function scopeByRelationship($query, $relationshipIdentifier)
+	public function scopeByRelationship($query, $relationshipIdentifier, $relationhip)
 	{
 		throw new Exception('Extend this class and override this method according to your app\s requirements');
 	}

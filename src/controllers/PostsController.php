@@ -62,7 +62,7 @@ class PostsController extends \BaseController {
 	 * @param $relationshipIdentifier
 	 * @return mixed
 	 */
-	public function indexByRelationship($relationshipIdentifier)
+	public function indexByRelationship($relationship, $relationshipIdentifier)
 	{
 		// Get the selected posts
 		$posts = $this->post->live()

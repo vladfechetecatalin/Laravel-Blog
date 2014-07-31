@@ -18,6 +18,6 @@ return array(
 	 *
 	 * @type mixed false | string
 	 */
-	'relationship_uri_prefix' => false,
+	'relationship_uri_prefix' => ['category', 'tag', 'author'],
 
 );
