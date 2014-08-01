@@ -1,6 +1,8 @@
 <?php namespace Fbf\LaravelBlog;
 
-class Post extends \Ardent {
+use LaravelBook\Ardent\Ardent;
+
+class Post extends Ardent {
 
 	/**
 	 * Status values for the database
